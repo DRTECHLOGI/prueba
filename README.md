@@ -75,7 +75,6 @@ La API está construida con .NET y utiliza Entity Framework Core para la gestió
   Cuerpo de la solicitud (JSON):
   ```json
   {
-    "nombre": "Juan Pérez",
-    "email": "juan.perez@example.com",
+    "Daniel Gonzalez', 'danielgonzalez@example.com"
     "fechaRegistro": "2024-12-18T10:00:00"
   }
