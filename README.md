@@ -78,3 +78,78 @@ La API está construida con .NET y utiliza Entity Framework Core para la gestió
     "Daniel Gonzalez', 'danielgonzalez@example.com"
     "fechaRegistro": "2024-12-18T10:00:00"
   }
+
+2. Productos
+Obtener productos: GET /api/productos
+
+Parámetros opcionales:
+
+precioMin: Precio mínimo.
+precioMax: Precio máximo.
+stockMin: Stock mínimo.
+Actualizar un producto: PUT /api/productos/{id}
+
+Cuerpo de la solicitud (JSON):
+
+json
+Copiar código
+{
+  "precio": 20.99,
+  "stock": 50
+}
+3. Pedidos
+Crear un pedido: POST /api/pedidos
+
+Cuerpo de la solicitud (JSON):
+
+json
+Copiar código
+{
+  "clienteId": 1,
+  "pedidoProductos": [
+    {
+      "productoId": 1,
+      "cantidad": 2
+    }
+  ]
+}
+Obtener un pedido: GET /api/pedidos/{id}
+
+4. Autenticación
+Iniciar sesión: POST /api/auth/login
+
+Cuerpo de la solicitud (JSON):
+
+json
+Copiar código
+{
+  "email": "admin@example.com",
+  "password": "password"
+}
+Respuesta (JSON):
+
+json
+Copiar código
+{
+  "token": "jwt_token_aqui"
+}
+
+## Estructura del Proyecto
+Tienda.Application: Contiene la lógica de negocio, servicios e interfaces.
+Tienda.Infrastructure: Proporciona la implementación de los servicios y acceso a datos (DbContext).
+Tienda.WebApi: Contiene los controladores de la API.
+Tienda.Core: Contiene las entidades del dominio y modelos de datos.
+Licencia
+Este proyecto está bajo la licencia MIT. Puedes ver más detalles en el archivo LICENSE.
+##
+
+### 
+**Descripción**: Explica el propósito general del proyecto.
+ **Tecnologías utilizadas**: Describe las tecnologías y herramientas usadas en el proyecto.
+ **Requisitos**: Incluye las herramientas necesarias para ejecutar el proyecto.
+ **Instalación**: Detalla los pasos para clonar, configurar e iniciar la aplicación.
+ **Uso**: Explica cómo interactuar con la API mediante sus endpoints.
+ **Estructura del Proyecto**: Proporciona una visión general de cómo está organizado el código.
+ **Contribución**: Proporciona instrucciones para quienes deseen colaborar con el proyecto.
+ **Licencia**: Información sobre la licencia del proyecto.
+
