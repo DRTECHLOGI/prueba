@@ -150,6 +150,5 @@ Este proyecto está bajo la licencia MIT. Puedes ver más detalles en el archivo
  **Instalación**: Detalla los pasos para clonar, configurar e iniciar la aplicación.
  **Uso**: Explica cómo interactuar con la API mediante sus endpoints.
  **Estructura del Proyecto**: Proporciona una visión general de cómo está organizado el código.
- **Contribución**: Proporciona instrucciones para quienes deseen colaborar con el proyecto.
  **Licencia**: Información sobre la licencia del proyecto.
 
